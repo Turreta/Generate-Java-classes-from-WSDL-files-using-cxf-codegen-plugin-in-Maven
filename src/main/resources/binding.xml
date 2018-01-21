@@ -1,0 +1,13 @@
+<jaxb:bindings xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+	jaxb:extensionBindingPrefixes="xjc" jaxb:version="2.0">
+	<jaxb:globalBindings typesafeEnumMaxMembers="2000">
+		<xjc:serializable />
+		<jaxb:javaType name="java.util.Date" xmlType="xsd:dateTime"
+			parseMethod="org.apache.cxf.xjc.runtime.DataTypeAdapter.parseDateTime"
+			printMethod="org.apache.cxf.xjc.runtime.DataTypeAdapter.printDateTime" />
+		<jaxb:javaType name="java.util.Date" xmlType="xsd:date"
+			parseMethod="org.apache.cxf.xjc.runtime.DataTypeAdapter.parseDate"
+			printMethod="org.apache.cxf.xjc.runtime.DataTypeAdapter.printDate" />
+	</jaxb:globalBindings>
+</jaxb:bindings>
